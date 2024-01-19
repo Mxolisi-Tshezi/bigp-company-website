@@ -373,8 +373,17 @@ header
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+
 }
 
+.header-area .main-nav .logo img {
+  height: 7rem;
+  display: inline-block;
+  vertical-align: middle;
+  width: 15rem;
+  margin-top: -1.5rem;
+  margin-right: 10px;
+}
 
 .header-area .main-nav .nav {
   float: right;
