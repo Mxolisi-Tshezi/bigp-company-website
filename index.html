@@ -42,6 +42,8 @@
     </div>
     <!-- ***** Preloader End ***** -->
 
+    <div class="”cursor”"></div>
+
     <!-- ***** Header Area Start ***** -->
     <header class="header-area header-sticky">
       <div class="container">
@@ -54,7 +56,7 @@
               <span class="colorLogo" style="color: rgb(100, 71, 34)">Communications</span> -->
 
                 <img
-                src="assets/images/BigPLogo.png" 
+                  src="assets/images/BigPLogo.png"
                   alt=""
                   class="img-fluid"
                 />
@@ -687,7 +689,31 @@
     <script src="assets/js/isotope.js"></script>
 
     <!-- Global Init -->
+    <script src="assets/js/kinet.min.js"></script>
     <script src="assets/js/custom.js"></script>
+
+    <script>
+      const cursor = document.querySelector(".cursor");
+      var timeout;
+      //follow cursor on mousemove
+      document.addEventListener("mousemove", (e) => {
+        let x = e.pageX;
+        let y = e.pageY;
+        cursor.style.top = y + "px";
+        cursor.style.left = x + "px";
+        cursor.style.display = "block";
+        //cursor effects when mouse stopped
+        function mouseStopped() {
+          cursor.style.display = "none";
+        }
+        clearTimeout(timeout);
+        timeout = setTimeout(mouseStopped, 5000);
+      });
+      //cursor effects when mouseout
+      document.addEventListener("mouseout", () => {
+        cursor.style.display = "none";
+      });
+    </script>
 
     <script>
       $(function () {
