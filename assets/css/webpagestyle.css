@@ -1415,14 +1415,14 @@ preloader
 */
 #preloader {
   overflow: hidden;
-  background-image: linear-gradient(145deg, #339b9e 0%, #68cc98 100%);
+  background-image: linear-gradient(145deg, rgb(68, 167, 170) 0%, #1c214b 100%);
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   position: fixed;
   z-index: 99999;
-  color: #fff;
+  color: #A2887F;
 }
 
 #preloader .jumper {
