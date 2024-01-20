@@ -971,6 +971,7 @@ about
   padding: 120px 0px 0px 0px;
   position: relative;
   z-index: 9;
+  background-color: #d8e6ed;
 }
 
 #about .container {
@@ -1023,13 +1024,14 @@ about
 
 /*
 ---------------------------------------------
-features
+services
 ---------------------------------------------
 */
 
 #features {
   padding-top: 80px;
   padding-bottom: 70px;
+  background-color: #d8e6ed;
 }
 
 #features .features-item {
@@ -1056,6 +1058,10 @@ features
   margin-bottom: 15px;
 }
 
+#features .container {
+  border-bottom: 5px solid #414463;
+  padding-bottom: 80px;
+}
 
 
 /*
@@ -1604,7 +1610,10 @@ search
 portfolio
 --------------------------------------------- 
 */
-
+#projects {
+  /* padding: 120px 0px; */
+  background-color: #d8e6ed;
+}
 #projects .filters {
   margin-top: 50px;
 }
