@@ -1493,7 +1493,23 @@ preloader
 }
 
 
+.circle {
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 10px white;
+  pointer-events: none;
+  position: fixed;
+  top: -10rem;
+  left: -10rem;
+  height: 2rem;
+  width: 2rem;
+  transition: transform 0.4s, background 0.4s;
+}
 
+.circle.big {
+  background: white;
+  transform: scale(2);
+}
 
 
 /* 

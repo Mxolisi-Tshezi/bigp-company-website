@@ -42,8 +42,7 @@
     </div>
     <!-- ***** Preloader End ***** -->
 
-
-    <div class="”cursor”"></div>
+    <div id="circle" class="circle"></div>
 
     <!-- ***** Header Area Start ***** -->
     <header class="header-area header-sticky">
@@ -135,7 +134,7 @@
                 We create innovative and functional mobile applications that
                 engage audiences and drive business growth
               </h3>
-              <h5>Mobile Development</h5>
+              <h5>Mobile App Development</h5>
               <!-- <a href="#features" class="main-stroked-button">Read More</a> -->
               <a href="#contact-us" class="main-filled-button">Enquire</a>
             </div>
@@ -374,7 +373,7 @@
                 <img src="assets/images/mobile-application.png" alt="" />
               </div>
               <div class="features-content">
-                <h4>Mobile Development</h4>
+                <h4>Mobile App Development</h4>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna
@@ -694,29 +693,6 @@
     <script src="assets/js/custom.js"></script>
 
     <script>
-      const cursor = document.querySelector(".cursor");
-      var timeout;
-      //follow cursor on mousemove
-      document.addEventListener("mousemove", (e) => {
-        let x = e.pageX;
-        let y = e.pageY;
-        cursor.style.top = y + "px";
-        cursor.style.left = x + "px";
-        cursor.style.display = "block";
-        //cursor effects when mouse stopped
-        function mouseStopped() {
-          cursor.style.display = "none";
-        }
-        clearTimeout(timeout);
-        timeout = setTimeout(mouseStopped, 5000);
-      });
-      //cursor effects when mouseout
-      document.addEventListener("mouseout", () => {
-        cursor.style.display = "none";
-      });
-    </script>
-
-    <script>
       $(function () {
         var selectedClass = "";
         $("p").click(function () {
@@ -730,6 +706,36 @@
             $("#portfolio").fadeTo(50, 1);
           }, 500);
         });
+      });
+
+
+
+      const menu = document.getElementById("menu");
+      const btn = document.getElementById("btn");
+      const circle = document.getElementById("circle");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("open");
+      });
+
+      document.addEventListener("mousemove", (e) => {
+        const height = circle.offsetHeight;
+        const width = circle.offsetWidth;
+
+        if (
+          e.target.tagName === "A" ||
+          e.target.tagName === "BUTTON" ||
+          e.target.parentNode.tagName === "BUTTON"
+        ) {
+          circle.classList.add("big");
+        } else {
+          circle.classList.remove("big");
+        }
+
+        setTimeout(() => {
+          circle.style.left = `${e.pageX - width / 2}px`;
+          circle.style.top = `${e.pageY - height / 2}px`;
+        }, 20);
       });
     </script>
   </body>
