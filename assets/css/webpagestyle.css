@@ -1179,7 +1179,18 @@ services
 
 .features-item .features-content p {
   margin-bottom: 15px;
+  /* background-color:  #414463; */
+  color:  #414463;
+  
 }
+.features-item .features-content .ul{
+
+  
+  background-color: #d8e6ed;
+  color: #d8e6ed;
+
+}
+
 
 #features .container {
   border-bottom: 5px solid #414463;
