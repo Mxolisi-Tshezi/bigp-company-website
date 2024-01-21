@@ -91,14 +91,14 @@ function submitToAPI(e) {
       data: JSON.stringify(data),
       crossDomain: true,
 
-      beforeSend: function (xhr) {
-        xhr.setRequestHeader(
-          "Access-Control-Allow-Origin",
-          "https://big-p-communications.netlify.app/#[object%20Object]"
-        );
-        xhr.setRequestHeader("Access-Control-Allow-Methods", "POST");
-        xhr.setRequestHeader("Access-Control-Allow-Headers", "Content-Type");
-      },
+    //   beforeSend: function (xhr) {
+    //     xhr.setRequestHeader(
+    //       "Access-Control-Allow-Origin",
+    //       "https://big-p-communications.netlify.app"
+    //     );
+    //     xhr.setRequestHeader("Access-Control-Allow-Methods", "POST");
+    //     xhr.setRequestHeader("Access-Control-Allow-Headers", "Content-Type");
+    //   },
 
       success: function (result) {
         // Hide the loading indicator
