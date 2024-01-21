@@ -260,7 +260,7 @@ a.main-button-icon {
   font-size: 13px;
   border-radius: 25px;
   padding: 13px 25px;
-  background-color: #1c214b;
+  background-color: #a2887f;
   text-transform: uppercase;
   color: #fff;
   font-weight: 600;
@@ -312,7 +312,7 @@ button.main-button-icon {
   font-size: 13px;
   border-radius: 25px;
   padding: 13px 25px;
-  background-color: #1c214b;
+  background-color: #a2887f;
   text-transform: uppercase;
   color: #fff;
   font-weight: 600;
@@ -364,8 +364,9 @@ a.text-button-icon:hover i {
 }
 
 .section-heading h6 {
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 30px;
+  font-weight: bold;
+  font-weight: 1000;
   text-transform: uppercase;
   letter-spacing: 0.25px;
   margin-top: 0px;
@@ -373,7 +374,7 @@ a.text-button-icon:hover i {
 }
 
 .section-heading h2 {
-  font-size: 32px;
+  font-size: 25px;
   font-weight: 800;
   letter-spacing: 1px;
   margin-top: 20px;
@@ -420,6 +421,7 @@ header
   -moz-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
+  background-color: #fff;
 }
 
 .header-area .main-nav {
@@ -515,12 +517,13 @@ header
 }
 
 .header-area .main-nav .nav li a {
-  color: #fff;
+  /* color: #fff; */
+  color: #7a7a7a;
 }
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #fff !important;
+  color: #1e1e1e !important;
   opacity: 0.5;
 }
 
@@ -865,6 +868,13 @@ banner
   max-width: none;
 }
 
+.box1 img {
+  width: 5rem;
+  height: auto;
+  object-fit: fill;
+
+}
+
 *,
 *:before,
 *:after {
@@ -1163,6 +1173,9 @@ services
 
 .features-item .features-icon {
   float: left;
+  /* color: #2e1b18; */
+
+  color: red;
 }
 
 #features .features-content {
@@ -1177,20 +1190,18 @@ services
   margin-bottom: 15px;
 }
 
+#features .section-heading h6 {
+  color: #1c214b;
+}
+
 .features-item .features-content p {
   margin-bottom: 15px;
-  /* background-color:  #414463; */
-  color:  #414463;
-  
+  color: #414463;
 }
-.features-item .features-content .ul{
-
-  
+.features-item .features-content .ul {
   background-color: #d8e6ed;
   color: #d8e6ed;
-
 }
-
 
 #features .container {
   border-bottom: 5px solid #414463;
@@ -1409,6 +1420,11 @@ contact
   color: #1c214b;
 }
 
+#contact-us .section-heading h2 {
+  color: black;
+  font-size: 1.5rem;
+}
+
 #contact-us .left-text-content ul li {
   margin-bottom: 30px;
 }
@@ -1421,6 +1437,8 @@ contact
 
 #contact-us .left-text-content ul li img {
   margin-right: 15px;
+  width: 30px;
+  height: 30px;
 }
 
 #contact-us {
@@ -1737,6 +1755,8 @@ portfolio
 */
 #projects {
   background-color: #d8e6ed;
+  display: inline-block;
+  width: 100%; 
 }
 #projects .filters {
   margin-top: 50px;
@@ -1752,7 +1772,8 @@ portfolio
   position: relative;
   font-size: 13px;
   font-weight: 700;
-  color: #9a9a9a;
+  color: black;
+
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -1760,10 +1781,14 @@ portfolio
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-#projects .filters ul li.active,
-#projects .filters ul li:hover {
+#projects .filters ul li.active {
   color: #1c214b;
 }
+
+#projects .filters ul li:hover {
+  color: grey;
+}
+
 #projects .filters-content {
   margin-top: 50px;
 }
@@ -1819,6 +1844,10 @@ portfolio
 #projects .section-heading h6 {
   color: #1c214b;
 }
+#projects .section-heading h2 {
+  /* color: #1c214b; */
+  font-size: 1.5rem;
+}
 
 @media (max-width: 992px) {
   #projects .filters ul li {
@@ -1830,6 +1859,8 @@ portfolio
     margin-bottom: 0px;
   }
 }
+
+
 
 .cursor {
   z-index: 999;
