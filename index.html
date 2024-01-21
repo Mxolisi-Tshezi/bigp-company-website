@@ -473,7 +473,10 @@
         </div>
         <div class="col-lg-8 col-md-8 col-xs-12">
           <div class="contact-form">
-            <form id="contact" action="" method="get">
+
+            <!-- <form id="contact" action="" method="get"> -->
+              <form id="contact" action="javascript:void(0);" onsubmit="submitToAPI(event);" role="form" class="email-form">
+
               <div class="row">
                 <div class="col-md-6 col-sm-12">
                   <fieldset>
@@ -567,6 +570,8 @@
   <!-- Global Init -->
   <script src="assets/js/kinet.min.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script src="assets/js/email.js"></script>
+
 
   <script>
     $(function () {
