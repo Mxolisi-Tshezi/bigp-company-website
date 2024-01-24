@@ -753,7 +753,7 @@ header
     width: 100%;
   }
   .header-area {
-    background-color: #414463;
+    background-color: #fff;
     padding: 0px 15px;
     height: 80px;
     box-shadow: none;
@@ -872,7 +872,6 @@ banner
   width: 5rem;
   height: auto;
   object-fit: fill;
-
 }
 
 *,
@@ -1422,7 +1421,8 @@ contact
 
 #contact-us .section-heading h2 {
   color: black;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: 300;
 }
 
 #contact-us .left-text-content ul li {
@@ -1756,7 +1756,7 @@ portfolio
 #projects {
   background-color: #d8e6ed;
   display: inline-block;
-  width: 100%; 
+  width: 100%;
 }
 #projects .filters {
   margin-top: 50px;
@@ -1845,8 +1845,8 @@ portfolio
   color: #1c214b;
 }
 #projects .section-heading h2 {
-  /* color: #1c214b; */
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: 300;
 }
 
 @media (max-width: 992px) {
@@ -1859,8 +1859,6 @@ portfolio
     margin-bottom: 0px;
   }
 }
-
-
 
 .cursor {
   z-index: 999;
