@@ -1126,10 +1126,18 @@ about
   margin-bottom: 10px;
 }
 
-#about .section-heading img {
+
+.about-us-image img{
+
   height: 22rem;
   width: 30rem;
 }
+
+
+/* #about .section-heading img {
+  height: 22rem;
+  width: 30rem;
+} */
 
 #about .section-heading h6 {
   color: #1c214b;
