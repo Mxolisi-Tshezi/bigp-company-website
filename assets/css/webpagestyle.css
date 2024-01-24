@@ -1143,6 +1143,11 @@ about
   color: #1c214b;
 }
 
+#about .section-heading h2 {
+  color: #1c214b;
+  font-weight: bold;
+}
+
 #about .service-item {
   margin-top: 30px;
 }
