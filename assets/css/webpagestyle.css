@@ -867,6 +867,17 @@ banner
   max-width: none;
 }
 
+
+@media (max-width: 767px) {
+  .img-fill {
+    object-fit: unset;
+
+
+  }
+
+}
+
+
 .box1 img {
   width: 5rem;
   height: auto;
@@ -1115,6 +1126,11 @@ about
   margin-bottom: 10px;
 }
 
+#about .section-heading img {
+  height: 22rem;
+  width: 30rem;
+}
+
 #about .section-heading h6 {
   color: #1c214b;
 }
@@ -1151,6 +1167,19 @@ about
   font-size: 16px;
   line-height: 27px;
   color: #777;
+}
+
+@media (max-width: 767px) {
+  #about .section-heading img {
+    /* height: 20rem;
+    width: 30rem; */
+
+    padding-right: 5rem;
+  }
+
+  .section-heading h6 {
+    text-align: center;
+  }
 }
 
 /*
