@@ -1178,9 +1178,8 @@ about
 }
 
 @media (max-width: 767px) {
-  #about .section-heading img {
-    /* height: 20rem;
-    width: 30rem; */
+  .about-us-image img {
+
 
     padding-right: 5rem;
   }
